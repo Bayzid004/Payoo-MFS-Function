@@ -33,11 +33,11 @@
                   <!-- Features End -->
                    <div class="divider"></div>
                    <!-- Add Money Form Start -->
-                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                   <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text">Amount</span>
+                          <span class="label-text">Add Money Amount</span>
                         </label>
                         <input type="email" id="input-add-money"  placeholder="Your Amount" class="input input-bordered" required />
                       </div>
@@ -53,11 +53,33 @@
                     </form>
                   </div>
                    <!-- Add Money Form End -->
+                    <!-- Cash Out Form Start -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Cash Out Amount</span>
+                            </label>
+                            <input type="email" id="input-cash-out"  placeholder="Your Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin</span>
+                            </label>
+                            <input type="password" id="input-pin-cash-out" placeholder="Your Pin" autocomplete="off" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                    <!-- Cash Out Form end -->
               </div>
             </div>
           </div>
     </main>
     <script src="./JS/utilities.js"></script>
     <script src="./JS/addmoney.js"></script>
+    <script src="./JS/cashOut.js"></script>
   </body>
 </html>
