@@ -8,3 +8,9 @@ function getTextFieldValueById(id){
     const textNumber = parseInt(textValue);
     return textNumber;
 }
+
+function showSectionById(id){
+    document.getElementById('add-money-form-section').classList.add('hidden');
+    document.getElementById('cash-out-form-section').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
